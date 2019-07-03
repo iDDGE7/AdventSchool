@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Inicio</title>
+</head>
+
+<body ondragstart="return false;" ondrop="return false;" onresize="resetMenu()" onclick="resetMenuOutItems()">
+    <div class="nav-shadow" id="bcHeader"></div>
+    <header class="header" id="header">
+        <nav>
+            <div class="nav-section" id="logoSection">
+                <img src="media/icons/mainSVGwhite.svg" class="iconSchool scaleButtonSearch">
+            </div>
+
+            <div class="nav-section" id="itemsSection">
+                <a href="#" class="link">
+                    Home
+                </a>
+                <a href="#" class="link">
+                    Calender
+                </a>
+                <a href="#" class="link">
+                    Schoolen
+                </a>
+                <a href="#" class="link">
+                    About us
+                </a>
+                <a href="#" class="link">
+                    Login portal
+                </a>
+                <a href="#" class="link">
+                    Vacaturas
+                </a>
+            </div>
+
+            <form action="#" id="searchSection" class="nav-section searchForm">
+                <input type="text" placeholder="Search.." name="search" id="boxSearch">
+                <button type="submit" id="buttonSearch" class="scaleButtonSearch">
+                    <div id="submitButton">
+                        <img class="iconSearch" src="media/icons/searchS.svg" alt="">
+                    </div>
+                </button>
+            </form>
+
+            <a href="#" class="nav-section" id="menuSection">
+                <img src="media/icons/menu.svg" class="iconMenu">
+            </a>
+
+        </nav>
+        <!-- <nav id="nav">
+            <section class="nav-section" id="logoSection"><img src="media/icons/main-white.png" class="icon scale1">
+            </section>
+
+            <section class="nav-section" id="itemsSection">
+                <div class="item" id="links">
+                    <a href="#" class="link">
+                        <div class="txt-link" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Home</div>
+                        <div class="button" id="buttonHome"></div>
+                    </a>
+                    <a href="#" class="link">
+                        <div class="txt-link" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Calender
+                        </div>
+                        <div class="button" id="buttonCalendar"></div>
+                    </a>
+                    <a href="#" class="link">
+                        <div class="txt-link" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Schoolen
+                        </div>
+                        <div class="button" id="buttonSchoolen"></div>
+                    </a>
+                    <a href="#" class="link">
+                        <div class="txt-link" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">About us
+                        </div>
+                        <div class="button" id="buttonAboutUs"></div>
+                    </a>
+                    <a href="#" class="link">
+                        <div class="txt-link" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Login portal
+                        </div>
+                        <div class="button" id="buttonLoginPortal"></div>
+                    </a>
+                    <a href="#" class="link">
+                        <div class="txt-link" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Vacaturas
+                        </div>
+                        <div class="button" id="buttonVacaturas"></div>
+                    </a>
+                </div>
+            </section>
+
+            <form action="/action_page.php" id="search" class="searchForm">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit">
+                    <a href="#" id="submitB">
+                        <img class="iconSearch" src="media/icons/searchS.svg" alt="">
+                    </a>
+                </button>
+            </form>
+
+
+            <section class="nav-section" id="btnMenuSection"><img src="media/icons/menu.svg" class="icon">
+            </section>
+        </nav> -->
+    </header>
+
+    <section class="content-slide">
+        <div class="slide slide1" id="slide1"></div>
+        <div class="slide slide2" id="slide2"></div>
+        <div class="slide slide3" id="slide3"></div>
+        <div class="slide slide4" id="slide4"></div>
+        <div class="filterCover"></div>
+        <div class="containerArrows">
+            <div class="btn-Area btn-Left">
+                <div class="arrowA scaleButton" id="btn-left-action">
+                    <img src="media/icons/arrowLeft.svg" alt="" class="iconArrow">
+                </div>
+            </div>
+
+            <div class="container-Title">
+               Advent <br> School Bestuur
+            </div>
+
+            <div class="btn-Area btn-Right">
+                <div href="" class="arrowA scaleButton" id="btn-right-action">
+                    <img src="media/icons/arrowRight.svg" alt="" class="iconArrow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <p style="position: absolute; top: 5000px;">s</p>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/coverSlider.js"></script>
+</body>
+
+</html>

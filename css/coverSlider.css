@@ -1,0 +1,239 @@
+:root {
+  --showSlide: translateX(0%);
+  --hideSlide: translateX(100%);
+}
+
+.content-slide,
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: saturate(150%);
+}
+
+.content-slide {
+  overflow: hidden;
+}
+
+#slide1 {
+  background: url(../media/images/slide5.jpg) no-repeat center;
+  /* filter: grayscale(75%); */
+  filter: saturate(120%);
+  background-size: cover;
+}
+
+#slide2 {
+  background: url(../media/images/photo1.JPG) no-repeat center;
+  filter: saturate(150%);
+  background-size: cover;
+}
+
+#slide3 {
+  background: url(../media/images/photo2.JPG) no-repeat center;
+  filter: saturate(120%);
+  background-size: cover;
+}
+
+#slide4 {
+  background: url(../media/images/photo3.JPG) no-repeat center;
+  filter: saturate(150%);
+  background-size: cover;
+}
+
+.slide2,
+.slide3,
+.slide4 {
+  transform: var(--hideSlide);
+}
+
+.slide1 {
+  left: var(--showSlide);
+}
+
+.slideHiddenLeft {
+  animation: slideHiddenLeft 0.3s linear;
+}
+
+.slideShowLeft {
+  animation: slideShowLeft 0.3s linear;
+}
+
+@keyframes slideHiddenLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideShowLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.slideHiddenRight {
+  animation: slideHiddenRight 0.3s linear;
+}
+
+.slideShowRight {
+  animation: slideShowRight 0.3s linear;
+}
+
+@keyframes slideHiddenRight {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slideShowRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.containerArrows {
+  width: 90%;
+  height: 20%;
+  z-index: 6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rgb(68, 49, 49); */
+}
+
+.btn-Area,
+.arrowA {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn-Area {
+  width: 100px;
+  height: 100%;
+  z-index: 7;
+  user-select: none;
+  user-zoom: none;
+  /* background-color: #fff; */
+}
+
+.arrowA {
+  background-color: rgba(14, 14, 14, 0.733);
+  padding: 10px;
+  width: 60%;
+  border-radius: 10px;
+  z-index: 8;
+}
+
+.iconArrow {
+  width: 100%;
+}
+
+.container-Title {
+  border-radius: 20px 20px 50px 0px;
+  position: absolute;
+  padding: 20px 20px 20px 20px;
+  margin-left: 200px;
+  user-select: none;
+  font-size: 40px;
+  font-family: Poppins;
+  color: rgb(255, 255, 255);
+}
+
+.filterCover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(78.56deg, rgba(38, 238, 160, 0.99) 5.66%, rgba(13, 185, 221, 0.1) 58.08%); */
+  background: linear-gradient(78.56deg, rgba(38, 238, 160, 0.42) 5.66%, rgba(13, 185, 221, 0.19) 58.08%);
+}
+
+/* pantallas grandes */
+
+@media (max-width: 1200px) {
+  .containerArrows {
+    width: 90%;
+    height: 12%;
+  }
+  .btn-Area {
+    width: 80px;
+    height: 80%;
+  }
+  .arrowA {
+    width: 60%;
+  }
+  .iconArrow {
+    width: 100%;
+  }
+  .container-Title {
+    font-size: 22px;
+  }
+}
+
+/* escritorio normales */
+
+@media (max-width: 992px) {
+  .btn-Area {
+    width: 100px;
+    height: 100%;
+    /* background-color: rgba(182, 12, 12, 0.301); */
+  }
+  .arrowA {
+    width: 50%;
+  }
+  .container-Title {
+    padding: 10px;
+    font-size: 25px;
+  }
+}
+
+/* tabletas */
+
+@media (max-width: 768px) {
+  .arrowA {
+    width: 50%;
+  }
+  .iconArrow {
+    width: 100%;
+  }
+  .container-Title {
+    position: initial;
+    margin-left: initial;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+/* Moviles */
+
+@media (max-width: 400px) {
+  .btn-Area {
+    width: 70px;
+    height: 100%;
+  }
+  .arrowA {
+    width: 60%;
+  }
+  .container-Title {
+    padding: 10px;
+    font-size: 20px;
+  }
+}

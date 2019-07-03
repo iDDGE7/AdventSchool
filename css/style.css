@@ -1,0 +1,19 @@
+@import 'header.css';
+@import 'coverSlider.css';
+@import 'fx.css';
+
+
+@font-face {
+    font-family: Proxima Nova Alt Light;
+    src: url(../fonts/Proxima\ Nova\ Alt\ Light.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
