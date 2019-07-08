@@ -38,7 +38,7 @@
 }
 
 #slide4 {
-  background: url(../media/images/photo3.JPG) no-repeat center;
+  background: url(../media/images/slide6.jpg) no-repeat center;
   filter: saturate(150%);
   background-size: cover;
 }
@@ -54,11 +54,11 @@
 }
 
 .slideHiddenLeft {
-  animation: slideHiddenLeft 0.3s linear;
+  animation: slideHiddenLeft 0.5s linear;
 }
 
 .slideShowLeft {
-  animation: slideShowLeft 0.3s linear;
+  animation: slideShowLeft 0.5s linear;
 }
 
 @keyframes slideHiddenLeft {
@@ -80,11 +80,11 @@
 }
 
 .slideHiddenRight {
-  animation: slideHiddenRight 0.3s linear;
+  animation: slideHiddenRight 0.5s linear;
 }
 
 .slideShowRight {
-  animation: slideShowRight 0.3s linear;
+  animation: slideShowRight 0.5s linear;
 }
 
 @keyframes slideHiddenRight {
@@ -124,7 +124,8 @@
 }
 
 .btn-Area {
-  width: 100px;
+  /* width: 100px; */
+  width: 3vw;
   height: 100%;
   z-index: 7;
   user-select: none;
@@ -134,8 +135,8 @@
 
 .arrowA {
   background-color: rgba(14, 14, 14, 0.733);
-  padding: 10px;
-  width: 60%;
+  padding: 5px;
+  width: 100%;
   border-radius: 10px;
   z-index: 8;
 }
@@ -150,7 +151,7 @@
   padding: 20px 20px 20px 20px;
   margin-left: 200px;
   user-select: none;
-  font-size: 40px;
+  font-size: 5vh;
   font-family: Poppins;
   color: rgb(255, 255, 255);
 }
@@ -162,7 +163,8 @@
   width: 100%;
   height: 100%;
   /* background: linear-gradient(78.56deg, rgba(38, 238, 160, 0.99) 5.66%, rgba(13, 185, 221, 0.1) 58.08%); */
-  background: linear-gradient(78.56deg, rgba(38, 238, 160, 0.42) 5.66%, rgba(13, 185, 221, 0.19) 58.08%);
+  /* background: linear-gradient(78.56deg, rgba(38, 238, 160, 0.42) 5.66%, rgba(13, 185, 221, 0.19) 58.08%); */
+  /* background: linear-gradient(180.08deg, rgba(56, 230, 157, 0.79) 0.13%, rgba(0, 159, 183, 0) 59.05%); */
 }
 
 /* pantallas grandes */
@@ -173,7 +175,7 @@
     height: 12%;
   }
   .btn-Area {
-    width: 80px;
+    width: 6vw;
     height: 80%;
   }
   .arrowA {
@@ -191,12 +193,12 @@
 
 @media (max-width: 992px) {
   .btn-Area {
-    width: 100px;
+    width: 8vw;
     height: 100%;
     /* background-color: rgba(182, 12, 12, 0.301); */
   }
   .arrowA {
-    width: 50%;
+    width: 60%;
   }
   .container-Title {
     padding: 10px;
@@ -207,6 +209,10 @@
 /* tabletas */
 
 @media (max-width: 768px) {
+  .btn-Area {
+    width: 12vw;
+    height: 100%;
+  }
   .arrowA {
     width: 50%;
   }
@@ -226,7 +232,7 @@
 
 @media (max-width: 400px) {
   .btn-Area {
-    width: 70px;
+    width:15vw;
     height: 100%;
   }
   .arrowA {

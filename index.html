@@ -11,7 +11,7 @@
     <title>Inicio</title>
 </head>
 
-<body ondragstart="return false;" ondrop="return false;" onresize="resetMenu()" onclick="resetMenuOutItems()">
+<body ondragstart="return false;" ondrop="return false;">
     <div class="nav-shadow" id="bcHeader"></div>
     <header class="header" id="header">
         <nav>
@@ -54,59 +54,8 @@
             </a>
 
         </nav>
-        <!-- <nav id="nav">
-            <section class="nav-section" id="logoSection"><img src="media/icons/main-white.png" class="icon scale1">
-            </section>
 
-            <section class="nav-section" id="itemsSection">
-                <div class="item" id="links">
-                    <a href="#" class="link">
-                        <div class="txt-link" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Home</div>
-                        <div class="button" id="buttonHome"></div>
-                    </a>
-                    <a href="#" class="link">
-                        <div class="txt-link" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Calender
-                        </div>
-                        <div class="button" id="buttonCalendar"></div>
-                    </a>
-                    <a href="#" class="link">
-                        <div class="txt-link" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Schoolen
-                        </div>
-                        <div class="button" id="buttonSchoolen"></div>
-                    </a>
-                    <a href="#" class="link">
-                        <div class="txt-link" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">About us
-                        </div>
-                        <div class="button" id="buttonAboutUs"></div>
-                    </a>
-                    <a href="#" class="link">
-                        <div class="txt-link" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Login portal
-                        </div>
-                        <div class="button" id="buttonLoginPortal"></div>
-                    </a>
-                    <a href="#" class="link">
-                        <div class="txt-link" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Vacaturas
-                        </div>
-                        <div class="button" id="buttonVacaturas"></div>
-                    </a>
-                </div>
-            </section>
-
-            <form action="/action_page.php" id="search" class="searchForm">
-                <input type="text" placeholder="Search.." name="search">
-                <button type="submit">
-                    <a href="#" id="submitB">
-                        <img class="iconSearch" src="media/icons/searchS.svg" alt="">
-                    </a>
-                </button>
-            </form>
-
-
-            <section class="nav-section" id="btnMenuSection"><img src="media/icons/menu.svg" class="icon">
-            </section>
-        </nav> -->
     </header>
-
     <section class="content-slide">
         <div class="slide slide1" id="slide1"></div>
         <div class="slide slide2" id="slide2"></div>
@@ -121,7 +70,7 @@
             </div>
 
             <div class="container-Title">
-               Advent <br> School Bestuur
+                Advent <br> School Bestuur
             </div>
 
             <div class="btn-Area btn-Right">
@@ -130,8 +79,56 @@
                 </div>
             </div>
         </div>
+
+
     </section>
 
+    <div class="container-menu-mobile" id="menuMobile">
+        <div class="btn-close" id="buttonCloseMenu">
+            <img src="media/icons/cancel.svg" class="icon-close" alt="">
+        </div>
+
+        <div class="container-links-mobile">
+            <div class="item-movil itemM1">
+                <a class="item-movil-filter" href="#">
+                    <img src="media/icons/home-white.svg" class="iconMenuMobile" alt="HOME">
+                    Home
+                </a>
+            </div>
+            <div class="item-movil itemM2">
+                <a class="item-movil-filter" href="#">
+                    <img src="media/icons/calendar.svg" class="iconMenuMobile" alt="Calender">
+                    Calender
+                </a>
+            </div>
+            <div class="item-movil itemM3">
+                <a class="item-movil-filter" href="#">
+                    <img src="media/icons/school.svg" class="iconMenuMobile" alt="Schoolen">
+                    Schoolen
+                </a>
+            </div>
+            <div class="item-movil itemM4">
+                <a class="item-movil-filter" href="#">
+                    <img src="media/icons/vacaturas.svg" class="iconMenuMobile" alt="Vacaturas">
+                    Vacaturas
+                </a>
+            </div>
+            <div class="item-movil itemM5">
+                <a class="item-movil-filter" href="#">
+                    <img src="media/icons/login.svg" class="iconMenuMobile" alt="Login Portal">
+                    Login Portal
+                </a>
+            </div>
+            <div class="item-movil itemM6">
+                <a class="item-movil-filter" href="#">
+                    <img src="media/icons/about-us.svg" class="iconMenuMobile" alt="About us">
+                    About us
+                </a>
+            </div>
+        </div>
+
+
+    </div>
     <p style="position: absolute; top: 5000px;">s</p>
 
     <script src="js/navbar.js"></script>
