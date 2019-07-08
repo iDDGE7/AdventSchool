@@ -3,7 +3,16 @@
   --hideSlide: translateX(100%);
 }
 
-.content-slide,
+.content-slide{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: saturate(150%);
+}
+
 .slide {
   position: absolute;
   width: 100%;
