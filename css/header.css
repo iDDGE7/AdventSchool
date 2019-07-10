@@ -125,8 +125,10 @@ nav {
 
   text-align: center;
 
-  color: white;
+  background: linear-gradient();
   transition: all 0.2s;
+
+  color: white;
 }
 
 .link:hover {
@@ -216,7 +218,7 @@ nav {
   right: 5px;
   top: 4px;
   border: none;
-  background: #53dcf0;
+  background: linear-gradient(103.58deg, rgba(34, 179, 111, 0.938) 2.2%, rgba(38, 167, 187, 0.815) 99.47%);
   border-radius: 7px;
   padding-top: 4px;
 }
@@ -301,7 +303,7 @@ nav {
   }
 
   .itemM1 {
-    background: url(../media/images/bc4.jpg) fixed no-repeat;
+    background: url(../media/images/menu-mobile/Home.jpg) fixed no-repeat;
     background-size: cover;
 
     grid-row: span 5;
@@ -310,31 +312,31 @@ nav {
   .itemM2 {
     grid-row: span 4;
     grid-column: span 1;
-    background: url(../media/images/photo1.JPG) fixed no-repeat;
+    background: url(../media/images/menu-mobile/Calender.JPG) fixed no-repeat;
     background-size: cover;
   }
   .itemM3 {
     grid-row: span 5;
     grid-column: span 1;
-    background: url(../media/images/preview1.jpg) fixed no-repeat;
+    background: url(../media/images/menu-mobile/Schoolen.jpg) fixed no-repeat;
     background-size: cover;
   }
   .itemM4 {
     grid-row: span 3;
     grid-column: span 1;
-    background: url(../media/images/preview2.jpg) fixed no-repeat;
+    background: url(../media/images/menu-mobile/Vacaturas.jpg) fixed no-repeat;
     background-size: cover;
   }
   .itemM5 {
     grid-row: span 4;
     grid-column: span 1;
-    background: url(../media/images/slide3.jpg) fixed no-repeat;
+    background: url(../media/images/menu-mobile/LoginPortal.jpg) fixed no-repeat;
     background-size: cover;
   }
   .itemM6 {
     grid-row: span 3;
     grid-column: span 1;
-    background: url(../media/images/bc2.jpg) fixed no-repeat;
+    background: url(../media/images/menu-mobile/Aboutus.jpg) fixed no-repeat;
     background-size: cover;
   }
 

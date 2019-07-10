@@ -1,0 +1,205 @@
+.container-section-MV {
+  width: 100%;
+  background: url(../media/images/bible.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container-mv-title {
+  padding: 300px 50px 300px 50px;
+}
+
+.content-mv-title-description {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.mv-title {
+  color: rgb(255, 255, 255);
+  margin-right: 50px;
+
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 65px;
+}
+
+.line-divide-mv {
+  position: relative;
+  align-self: center;
+  min-height: 125px;
+  background-color: white;
+  width: 3px;
+  margin-right: 8px;
+}
+
+.mv-description {
+  max-width: 120px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 28px;
+}
+
+.content-button-mv {
+  margin-top: 15px;
+  position: relative;
+}
+
+.button-mv {
+  position: absolute;
+  right: 0px;
+
+  text-decoration: none;
+  width: 125px;
+  height: 45px;
+  border-radius: 9px;
+  color: #242020;
+  background: linear-gradient(103.58deg, rgba(34, 179, 111, 0.938) 2.2%, rgba(38, 167, 187, 0.815) 99.47%);
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-mv-phrase {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-phrase {
+  width: 80%;
+
+  display: flex;
+  flex-direction: column;
+}
+.container-phrase {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.phrase {
+  text-align: center;
+
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+
+  color: #ffffff;
+}
+.container-mention {
+  position: relative;
+  width: 100%;
+}
+
+.mention {
+  position: absolute;
+  right: 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 35px;
+
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #ffffff;
+  width: 145px;
+}
+
+/* pantallas grandes */
+
+@media (max-width: 1200px) {
+  .container-section-MV {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container-mv-title {
+    width: 100%;
+    padding: 150px 50px 150px 50px;
+  }
+
+  .content-button-mv {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .button-mv {
+    position: initial;
+    right: initial;
+  }
+
+  .container-mv-phrase {
+    width: 100%;
+    padding: 50px 0px 150px 0px;
+  }
+
+  .container-mention {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mention {
+    position: initial;
+    text-align: center;
+  }
+}
+
+/* escritorio normales */
+
+@media (max-width: 992px) {
+}
+
+/* tabletas */
+
+@media (max-width: 768px) {
+  .container-mv-title {
+    padding: 120px 0px 120px 0px;
+  }
+  .content-mv-title-description {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mv-title {
+    margin-right: initial;
+    text-align: center;
+  }
+
+  .line-divide-mv {
+    min-width: 220px;
+    min-height: 3px;
+    margin-right: initial;
+    margin-bottom: 20px;
+  }
+
+  .mv-description {
+    max-width: 220px;
+    text-align: center;
+  }
+}
+
+/* Moviles */
+
+@media (max-width: 400px) {
+}

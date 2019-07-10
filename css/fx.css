@@ -29,3 +29,11 @@
     transition-duration: 0.1s;
     transform: scale(1.2);
 }
+
+.color-button-card{
+    transition: all 0.3s;
+}
+.color-button-card:hover{
+    transition: all 0.3s;
+    color: white;
+}

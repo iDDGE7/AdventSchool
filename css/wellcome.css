@@ -1,8 +1,5 @@
 .container-section-wellcome {
-  position: absolute;
-  top: 100%;
   width: 100%;
-  /* background-color: rgb(54, 48, 48); */
   background: url(../media/images/baim-hanif-pYWuOMhtc6k-unsplash.jpg) no-repeat center;
   background-size: cover;
   display: flex;
@@ -52,7 +49,7 @@
   height: 45px;
   border-radius: 9px;
   color: #242020;
-  background-color: #eafc40;
+  background: linear-gradient(103.58deg, rgba(34, 179, 111, 0.938) 2.2%, rgba(38, 167, 187, 0.815) 99.47%);
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;

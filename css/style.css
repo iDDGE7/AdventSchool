@@ -2,6 +2,8 @@
 @import 'coverSlider.css';
 @import 'fx.css';
 @import 'wellcome.css';
+@import 'mv.css';
+@import 'cards.css';
 
 
 @font-face {
@@ -17,4 +19,11 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.container-full{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: rgb(53, 35, 35);
 }
