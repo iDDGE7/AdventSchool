@@ -109,7 +109,7 @@ nav {
 
 #itemsSection {
   padding: 10px;
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -120,7 +120,8 @@ nav {
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
-  font-size: 0.7vw;
+  /* font-size: 0.7vw; */
+  font-size: 11px;
   line-height: 19px;
 
   text-align: center;
@@ -268,21 +269,27 @@ nav {
   }
   .container-menu-mobile-hidden {
     width: 0%;
-    transition: all 1s;
+    transition: all 0.4s;
   }
 
   .btn-close {
-    position: absolute;
-    left: calc(50%);
-    bottom: 20px;
-    transform: translate(-50%);
-    width: 45px;
-    height: 45px;
-    background: #be4e2c;
-    border-radius: 50px;
+    border-radius: 5px;
+    background-color: rgba(255, 62, 62, 0.5);
+    width: 100%;
+    height: 100%;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2vh;
+    line-height: 19px;
+    text-decoration: none;
+
+    text-align: center;
+    color: rgb(255, 255, 255);
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   .icon-close {
@@ -300,6 +307,7 @@ nav {
 
   .item-movil {
     border-radius: 5px;
+    overflow: hidden;
   }
 
   .itemM1 {
@@ -310,7 +318,7 @@ nav {
     grid-column: span 1;
   }
   .itemM2 {
-    grid-row: span 4;
+    grid-row: span 7;
     grid-column: span 1;
     background: url(../media/images/menu-mobile/Calender.JPG) fixed no-repeat;
     background-size: cover;
@@ -322,7 +330,7 @@ nav {
     background-size: cover;
   }
   .itemM4 {
-    grid-row: span 3;
+    grid-row: span 7;
     grid-column: span 1;
     background: url(../media/images/menu-mobile/Vacaturas.jpg) fixed no-repeat;
     background-size: cover;
@@ -339,7 +347,31 @@ nav {
     background: url(../media/images/menu-mobile/Aboutus.jpg) fixed no-repeat;
     background-size: cover;
   }
+  .itemM7 {
+    grid-row: span 3;
+    grid-column: span 1;
+    background-color: rgb(231, 111, 75);
+  }
 
+  .item-movil-close {
+    border-radius: 5px;
+    background-color: rgba(255, 62, 62, 0.5);
+    width: 100%;
+    height: 100%;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2vh;
+    line-height: 19px;
+    text-decoration: none;
+
+    text-align: center;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .item-movil-filter {
     border-radius: 5px;
     background-color: rgba(41, 39, 39, 0.5);
@@ -348,7 +380,8 @@ nav {
     font-family: Open Sans;
     font-style: normal;
     font-weight: 600;
-    font-size: 2vh;
+    font-size: 15px;
+
     line-height: 19px;
     text-decoration: none;
 
