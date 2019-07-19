@@ -14,7 +14,6 @@
   grid-template-rows: repeat(2, 476px);
   grid-row-gap: 100px;
   grid-column-gap: 130px;
-  /* background-color: rgb(126, 47, 47); */
 }
 
 .cards-about-us {

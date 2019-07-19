@@ -1,45 +1,225 @@
 .footer {
+  position: relative;
   width: 100%;
+  padding: 72px 0 44px 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(216, 116, 116);
+  background: url(../media/images/footer2.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.filter-footer {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 33, 33, 0.671);
+  z-index: 1;
 }
 
 .container-data-footer {
-  width: 80%;
+  width: 90%;
+  max-width: 1665px;
+  margin-bottom: 80px;
+
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: rgb(3, 71, 148);
+  justify-content: space-between;
+  z-index: 5;
 }
 
 .content-title-footer {
-  background-color: rgb(51, 28, 28);
   display: flex;
-  padding-top: 100px;
+  align-items: center;
+  min-width: 266px;
 }
-
 .iconMainFooter {
   width: 59px;
+  height: 59px;
   margin-right: 20px;
 }
 
 .main-title-footer {
-  display: flex;
-  align-items: center;
-
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 40px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.content-contact-footer {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 280px;
+}
+
+.title-footer {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 40px;
+
   color: #ffffff;
 }
 
-.content-contact-footer{
-    padding-top: 150px;
-    background-color: #fff;
+.subtopics-item-contact {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 40px;
+
+  color: #ffffff;
+}
+
+.google-maps {
+  border-radius: 15px;
+  height: 150px;
+  background-color: rgb(49, 49, 49);
+}
+.description-item-contact {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 40px;
+
+  color: #ffffff;
+}
+
+.social-networs {
+  margin-top: 15px;
+  display: flex;
+}
+
+.icon-social-footer {
+  width: 25px;
+}
+.icon-social-footer:not(:first-child) {
+  margin-left: 29px;
+}
+
+.content-menu-footer {
+  width: 242px;
+  display: flex;
+  flex-direction: column;
+}
+.title-menu-footer {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 40px;
+
+  color: #ffffff;
+
+  margin-bottom: 25px;
+}
+.item-menu-footer {
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.horario-footer {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 40px;
+
+  color: #ffffff;
+}
+.container-copyright-footer {
+  max-width: 971px;
+  width: 80%;
+  z-index: 5;
+}
+
+.description-footer {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.name-school-footer {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.copyright-footer {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+@media (max-width: 930px) {
+  .container-data-footer {
+    width: 95%;
+
+    flex-direction: column;
+  }
+
+  .content-title-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 0 70px 0;
+  }
+
+  .content-contact-footer {
     display: flex;
     flex-direction: column;
+    padding: 30px;
+  }
+
+  .social-networs {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .icon-social-footer {
+    width: 30px;
+  }
+  .icon-social-footer:not(:first-child) {
+    margin-left: initial;
+  }
+
+  .content-menu-footer {
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-copyright-footer {
+    width: 90%;
+  }
 }

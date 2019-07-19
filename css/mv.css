@@ -1,13 +1,18 @@
 .container-section-MV {
   width: 100%;
-  background: url(../media/images/bible.jpg) no-repeat center;
+  background: linear-gradient(
+    rgba(25, 209, 231, 0.5),
+    rgba(243, 17, 224, 0.5)
+  ) , url(../media/images/bible.jpg) no-repeat center;
   background-size: cover;
   display: flex;
   justify-content: space-evenly;
+
+  
 }
 
 .container-mv-title {
-  padding: 300px 50px 300px 50px;
+  padding: 400px 50px 400px 50px;
 }
 
 .content-mv-title-description {
