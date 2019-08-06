@@ -1,161 +1,225 @@
-footer {
-    width: 100%;
-    padding: 90px 0 0px 0;
-    background: url(../media/images/footer2.jpg) no-repeat top;
-    background-size: cover;
+.footer {
+  position: relative;
+  width: 100%;
+  padding: 72px 0 44px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../media/images/footer2.jpg) center no-repeat;
+  background-size: cover;
 }
 
-.footerData {
-    width: 100%;
+.filter-footer {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 33, 33, 0.671);
+  z-index: 1;
+}
+
+.container-data-footer {
+  width: 90%;
+  max-width: 1665px;
+  margin-bottom: 80px;
+
+  display: flex;
+  justify-content: space-between;
+  z-index: 5;
+}
+
+.content-title-footer {
+  display: flex;
+  align-items: center;
+  min-width: 266px;
+}
+.iconMainFooter {
+  width: 59px;
+  height: 59px;
+  margin-right: 20px;
+}
+
+.main-title-footer {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.content-contact-footer {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 280px;
+}
+
+.title-footer {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 40px;
+
+  color: #ffffff;
+}
+
+.subtopics-item-contact {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 40px;
+
+  color: #ffffff;
+}
+
+.google-maps {
+  border-radius: 15px;
+  height: 150px;
+  background-color: rgb(49, 49, 49);
+}
+.description-item-contact {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 40px;
+
+  color: #ffffff;
+}
+
+.social-networs {
+  margin-top: 15px;
+  display: flex;
+}
+
+.icon-social-footer {
+  width: 25px;
+}
+.icon-social-footer:not(:first-child) {
+  margin-left: 29px;
+}
+
+.content-menu-footer {
+  width: 242px;
+  display: flex;
+  flex-direction: column;
+}
+.title-menu-footer {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 40px;
+
+  color: #ffffff;
+
+  margin-bottom: 25px;
+}
+.item-menu-footer {
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.horario-footer {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 40px;
+
+  color: #ffffff;
+}
+.container-copyright-footer {
+  max-width: 971px;
+  width: 80%;
+  z-index: 5;
+}
+
+.description-footer {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.name-school-footer {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.copyright-footer {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+@media (max-width: 930px) {
+  .container-data-footer {
+    width: 95%;
+
+    flex-direction: column;
+  }
+
+  .content-title-footer {
     display: flex;
-    justify-content: space-evenly;
-    padding: 40px 0 90px 0;
-    background-color: rgba(27, 26, 26, 0.294);
-}
-
-.foterItems {
-    width: 30%;
-    max-width: 280px;
-}
-
-.footerCredits {
-    width: 100%;
-}
-
-.titleItemsFooter {
-    margin-bottom: 25px;
-    font-family: 'Nunito', sans-serif;
-    font-size: 22px;
-    color: white;
-}
-
-.txtAboutUs {
-    font-family: 'Nunito', sans-serif;
-    font-size: 14px;
-    color: white;
-}
-
-.itemC {
-    margin-bottom: 15px;
-    font-family: 'Nunito', sans-serif;
-    font-size: 15px;
-    color: white;
-}
-
-.LocationGoogleMaps {
-    width: 100%;
-    height: 100px;
-    background-color: rgb(34, 31, 36);
-}
-
-.items {
-    margin-bottom: 15px;
-    font-family: 'Nunito', sans-serif;
-    font-size: 15px;
-    color: white;
-}
-
-.itemHorario {
-    margin-top: 30px;
-    font-family: 'Nunito', sans-serif;
-    font-size: 14px;
-    color: white;
-}
-
-.socialNetwors {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-}
+    justify-content: center;
+    padding: 70px 0 70px 0;
+  }
 
-.iconSocial {
-    width: 25px;
-}
-
-.footerCredits {
+  .content-contact-footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.281);
-    padding: 40px 0 0 0;
-}
+    padding: 30px;
+  }
 
-.message {
-    margin-bottom: 40px;
-    text-align: center;
-    max-width: 80%;
-    /* padding: 0 100px 0 100px; */
-    color: rgb(255, 255, 255);
-    font-family: 'Nunito', sans-serif;
-    font-size: 14px;
-}
+  .social-networs {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+  }
 
-.schoolname {
-    margin-bottom: 40px;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    font-family: 'Nunito', sans-serif;
-}
+  .icon-social-footer {
+    width: 30px;
+  }
+  .icon-social-footer:not(:first-child) {
+    margin-left: initial;
+  }
 
-.copyright {
-    font-size: 15px;
-    margin-bottom: 20px;
-    color: rgb(255, 255, 255);
-    font-family: 'Nunito', sans-serif;
-}
+  .content-menu-footer {
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 
-@media (max-width:1070px) {
-    .footerData {
-        padding: 40px 0 90px 0;
-    }
-    .foterItems {
-        width: 28%;
-        max-width: 280px;
-        padding-left: 20px;
-    }
-    .txtAboutUs {
-        font-family: 'Nunito', sans-serif;
-        font-size: 12px;
-    }
-    .itemC {
-        margin-bottom: 15px;
-        font-family: 'Nunito', sans-serif;
-        font-size: 12px;
-    }
-    .items {
-        margin-bottom: 15px;
-        font-family: 'Nunito', sans-serif;
-        font-size: 12px;
-    }
-}
-
-@media (max-width:500px) {
-    footer {
-        padding: 50px 0 0px 0;
-    }
-    .footerData {
-        flex-direction: column;
-        align-items: center;
-        padding: 40px 0 90px 0;
-    }
-    .foterItems {
-        width: 100%;
-        max-width: 300px;
-        height: 80%;
-    }
-    .foterItems:nth-child(1), .foterItems:nth-child(2) {
-        margin-bottom: 25px;
-    }
-    .message {
-        max-width: 90%;
-        font-size: 12px;
-    }
-    .schoolname {
-        font-size: 15px;
-    }
-    .copyright {
-        font-size: 14px;
-    }
+  .container-copyright-footer {
+    width: 90%;
+  }
 }

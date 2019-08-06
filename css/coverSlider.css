@@ -3,7 +3,7 @@
   --hideSlide: translateX(100%);
 }
 
-.content-slide{
+.content-slide {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -20,7 +20,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: saturate(150%);
+  /* filter: saturate(150%); */
 }
 
 .content-slide {
@@ -28,27 +28,31 @@
 }
 
 #slide1 {
-  background: url(../media/images/slide5.jpg) no-repeat center;
+  background: linear-gradient(rgba(36, 36, 36, 0.5), rgba(41, 40, 41, 0.5)),
+    url(../media/images/slide5.jpg) no-repeat center;
   /* filter: grayscale(75%); */
-  filter: saturate(120%);
+  /* filter: saturate(120%); */
   background-size: cover;
 }
 
 #slide2 {
-  background: url(../media/images/photo1.JPG) no-repeat center;
-  filter: saturate(150%);
+  background: linear-gradient(rgba(36, 36, 36, 0.5), rgba(41, 40, 41, 0.5)),
+    url(../media/images/photo1.JPG) no-repeat center;
+  /* filter: saturate(150%); */
   background-size: cover;
 }
 
 #slide3 {
-  background: url(../media/images/photo2.JPG) no-repeat center;
-  filter: saturate(120%);
+  background: linear-gradient(rgba(36, 36, 36, 0.5), rgba(41, 40, 41, 0.5)),
+    url(../media/images/photo2.JPG) no-repeat center;
+  /* filter: saturate(120%); */
   background-size: cover;
 }
 
 #slide4 {
-  background: url(../media/images/slide6.jpg) no-repeat center;
-  filter: saturate(150%);
+  background: linear-gradient(rgba(36, 36, 36, 0.5), rgba(41, 40, 41, 0.5)),
+    url(../media/images/slide6.jpg) no-repeat center;
+  /* filter: saturate(150%); */
   background-size: cover;
 }
 
@@ -241,7 +245,7 @@
 
 @media (max-width: 400px) {
   .btn-Area {
-    width:15vw;
+    width: 15vw;
     height: 100%;
   }
   .arrowA {
