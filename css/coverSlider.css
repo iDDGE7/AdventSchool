@@ -1,6 +1,7 @@
 :root {
   --showSlide: translateX(0%);
   --hideSlide: translateX(100%);
+  /* --filter: -moz-linear-gradient(rgba(36, 36, 36, 0.5), rgba(221, 186, 29, 0.3)); */
 }
 
 .content-slide {
@@ -10,7 +11,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: saturate(150%);
+  overflow: hidden;
+  filter: saturate(150%) brightness(90%);
 }
 
 .slide {
@@ -20,39 +22,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* filter: saturate(150%); */
-}
 
-.content-slide {
-  overflow: hidden;
+  transition: all 0.5s;
 }
 
 #slide1 {
-  background: linear-gradient(rgba(36, 36, 36, 0.5), rgba(41, 40, 41, 0.5)),
-    url(../media/images/slide5.jpg) no-repeat center;
-  /* filter: grayscale(75%); */
-  /* filter: saturate(120%); */
+  background: url(../media/images/slide5.jpg) no-repeat center;
   background-size: cover;
 }
 
 #slide2 {
-  background: linear-gradient(rgba(36, 36, 36, 0.5), rgba(41, 40, 41, 0.5)),
-    url(../media/images/photo1.JPG) no-repeat center;
-  /* filter: saturate(150%); */
+  background: url(../media/images/photo1.JPG) no-repeat center;
   background-size: cover;
 }
 
 #slide3 {
-  background: linear-gradient(rgba(36, 36, 36, 0.5), rgba(41, 40, 41, 0.5)),
-    url(../media/images/photo2.JPG) no-repeat center;
-  /* filter: saturate(120%); */
+  background: url(../media/images/photo2.JPG) no-repeat center;
   background-size: cover;
 }
 
 #slide4 {
-  background: linear-gradient(rgba(36, 36, 36, 0.5), rgba(41, 40, 41, 0.5)),
-    url(../media/images/slide6.jpg) no-repeat center;
-  /* filter: saturate(150%); */
+  background: url(../media/images/slide6.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -78,6 +68,7 @@
   from {
     transform: translateX(0%);
   }
+
   to {
     transform: translateX(-100%);
   }
@@ -87,6 +78,7 @@
   from {
     transform: translateX(100%);
   }
+
   to {
     transform: translateX(0%);
   }
@@ -104,6 +96,7 @@
   from {
     transform: translateX(0%);
   }
+
   to {
     transform: translateX(100%);
   }
@@ -113,6 +106,7 @@
   from {
     transform: translateX(-100%);
   }
+
   to {
     transform: translateX(0%);
   }
@@ -125,7 +119,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: rgb(68, 49, 49); */
 }
 
 .btn-Area,
@@ -137,17 +130,14 @@
 }
 
 .btn-Area {
-  /* width: 100px; */
   width: 3vw;
   height: 100%;
   z-index: 7;
   user-select: none;
   user-zoom: none;
-  /* background-color: #fff; */
 }
 
 .arrowA {
-  background-color: rgba(14, 14, 14, 0.733);
   padding: 5px;
   width: 100%;
   border-radius: 10px;
@@ -159,14 +149,40 @@
 }
 
 .container-Title {
-  border-radius: 20px 20px 50px 0px;
   position: absolute;
-  padding: 20px 20px 20px 20px;
+  padding: 0px 20px 0px 0px;
   margin-left: 200px;
   user-select: none;
-  font-size: 5vh;
-  font-family: Poppins;
+  font-size: 40px;
+  font-family: proxima nova;
+  font-weight: bold;
+  text-transform: uppercase;
   color: rgb(255, 255, 255);
+  background: linear-gradient(103.58deg, rgba(34, 179, 111, 0.938) 2.2%, rgba(38, 167, 187, 0.815) 99.47%);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.52);
+  border-radius: 10px;
+}
+
+.blink {
+  width: 3px;
+  height: 50%;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translateY(-50%);
+
+  animation: blink 0.6s infinite;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
 }
 
 .filterCover {
@@ -184,19 +200,23 @@
 
 @media (max-width: 1200px) {
   .containerArrows {
-    width: 90%;
-    height: 12%;
+    /* width: 90%;
+    height: 12%; */
   }
+
   .btn-Area {
     width: 6vw;
     height: 80%;
   }
+
   .arrowA {
     width: 60%;
   }
+
   .iconArrow {
     width: 100%;
   }
+
   .container-Title {
     font-size: 22px;
   }
@@ -210,9 +230,11 @@
     height: 100%;
     /* background-color: rgba(182, 12, 12, 0.301); */
   }
+
   .arrowA {
     width: 60%;
   }
+
   .container-Title {
     padding: 10px;
     font-size: 25px;
@@ -226,19 +248,24 @@
     width: 12vw;
     height: 100%;
   }
+
   .arrowA {
     width: 50%;
   }
+
   .iconArrow {
     width: 100%;
   }
+
+
   .container-Title {
-    position: initial;
-    margin-left: initial;
-    padding: 10px;
-    font-size: 30px;
+    position: relative;
+    margin: 15px;
+    font-size: 20px;
     text-align: center;
+    /* background-color: blue; */
   }
+
 }
 
 /* Moviles */
@@ -248,11 +275,13 @@
     width: 15vw;
     height: 100%;
   }
+
   .arrowA {
     width: 60%;
   }
+
   .container-Title {
     padding: 10px;
-    font-size: 20px;
+    font-size: 15px;
   }
 }

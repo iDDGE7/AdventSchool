@@ -3,6 +3,10 @@ var header = document.getElementById("header");
 var bcHeader = document.getElementById("bcHeader");
 var nav = document.getElementById("nav");
 var link = document.getElementsByClassName("link");
+var logoMain = document.getElementsByClassName('fillMain');
+var boxSearch = document.getElementById("boxSearch");
+var menuButton = document.getElementsByClassName("fill-button-menu");
+
 var stateScroll = 0;
 var i = 0;
 for (i; i < link.length; i++) {
@@ -12,19 +16,38 @@ for (i; i < link.length; i++) {
 
 
 window.onscroll = function () {
-    if (document.documentElement.scrollTop > 150) {
-        header.className = 'header-up';
-        bcHeader.className = 'nav-shadow-down';
+    var scrollpos = document.documentElement.scrollTop;
+    if (scrollpos > 150) {
+        bcHeader.style.transform = "translateY(0%)"
+        header.style.transform = "translateY(0%)"
+        boxSearch.style.backgroundColor = "rgb(41, 41, 41)";
+        boxSearch.style.color = "white";
+        boxSearch.className = "placeholder-white";
         for (var i = 0; i < link.length; i++) {
-            link[i].style.color = "#53DCF0";
+            link[i].style.color = "#252525";
+        }
+        for (var i = 0; i < logoMain.length; +i++) {
+            logoMain[i].style.fill = "#252525";
+        }
+        for (var i = 0; i < menuButton.length; +i++) {
+            menuButton[i].style.fill = "#252525";
         }
         stateScroll = 1;
     }
     else if (stateScroll == 1) {
-        header.className = 'header-down';
-        bcHeader.className = 'nav-shadow-up';
+        bcHeader.style.transform = "translateY(-100%)"
+        header.style.transform = "translateY(100%)"
+        boxSearch.style.backgroundColor = "white";
+        boxSearch.className = "placeholder-dark";
+        boxSearch.style.color = "rgb(49, 49, 49)";
         for (var i = 0; i < link.length; i++) {
             link[i].style.color = "white";
+        }
+        for (var i = 0; i < logoMain.length; +i++) {
+            logoMain[i].style.fill = "white";
+        }
+        for (var i = 0; i < menuButton.length; +i++) {
+            menuButton[i].style.fill = "white";
         }
         stateScroll = 0;
     }
@@ -32,9 +55,9 @@ window.onscroll = function () {
 
 function changeColor() {
     if (stateScroll == 0) {
-        this.style.color = "#53DCF0";
+        this.style.color = "rgb(83, 241, 144)";
     } else {
-        this.style.color = "white";
+        this.style.color = "rgba(38, 167, 187, 0.815)";
     }
 
 }
@@ -43,7 +66,7 @@ function resetColor() {
     if (stateScroll == 0) {
         this.style.color = "white";
     } else {
-        this.style.color = "#53DCF0";
+        this.style.color = "#252525";
     }
 
 }
@@ -57,9 +80,9 @@ var buttonCloseMenu = document.getElementById("buttonCloseMenu");
 var menuMobile = document.getElementById("menuMobile");
 
 
-buttonMenu.addEventListener('click', function(){
+buttonMenu.addEventListener('click', function () {
     menuMobile.className = "container-menu-mobile-show";
 });
-buttonCloseMenu.addEventListener('click', function(){
+buttonCloseMenu.addEventListener('click', function () {
     menuMobile.className = "container-menu-mobile-hidden";
 });
