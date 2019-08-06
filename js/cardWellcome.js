@@ -24,7 +24,19 @@ for (var i = 0; i < cards.length; i++) {
     circles[i].style.transition = "all 0.5s";
 }
 
+var interval = window.setInterval(function () {
+    changeCardAuto();
+}, 2000);
+
+
 function changeCard() {
+    clearInterval(interval);
+    window.setTimeout(function () {
+        interval = window.setInterval(function () {
+            changeCardAuto();
+        }, 2000);
+    }, 10000);
+
     if (this == circle1 && countcard != 1) {
         countcard = 1;
         card1.style.transform = "translateX(0%)";
@@ -73,3 +85,45 @@ function changeCard() {
 
     }
 }
+
+
+function changeCardAuto() {
+    if (countcard == 1) {
+        countcard = 2;
+        card2.style.transform = "translateX(0%)";
+        card1.style.transform = "translateX(-100%)";
+        card3.style.transform = "translateX(100%)";
+        card4.style.transform = "translateX(200%)";
+        circle2.style.background = "rgb(22, 151, 184)";
+        circleAnt.style.background = "rgba(255, 255, 255, 0.404)";
+        circleAnt = circle2;
+    } else if (countcard == 2) {
+        countcard = 3;
+        card2.style.transform = "translateX(-100%)";
+        card1.style.transform = "translateX(-200%)";
+        card3.style.transform = "translateX(0%)";
+        card4.style.transform = "translateX(100%)";
+        circle3.style.background = "rgb(22, 151, 184)";
+        circleAnt.style.background = "rgba(255, 255, 255, 0.404)";
+        circleAnt = circle3;
+    } else if (countcard == 3) {
+        countcard = 4;
+        card2.style.transform = "translateX(-200%)";
+        card1.style.transform = "translateX(-300%)";
+        card3.style.transform = "translateX(-100%)";
+        card4.style.transform = "translateX(0%)";
+        circle4.style.background = "rgb(22, 151, 184)";
+        circleAnt.style.background = "rgba(255, 255, 255, 0.404)";
+        circleAnt = circle4;
+    } else if (countcard == 4) {
+        countcard = 1;
+        card2.style.transform = "translateX(100%)";
+        card1.style.transform = "translateX(0%)";
+        card3.style.transform = "translateX(300%)";
+        card4.style.transform = "translateX(400%)";
+        circle1.style.background = "rgb(22, 151, 184)";
+        circleAnt.style.background = "rgba(255, 255, 255, 0.404)";
+        circleAnt = circle1;
+    }
+}
+

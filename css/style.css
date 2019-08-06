@@ -6,7 +6,10 @@
 @import 'cards.css';
 @import 'footer.css';
 
-
+@font-face {
+    font-family: Proxima Nova;
+    src: url(../fonts/ProximaNova-Regular.otf);
+  }
 @font-face {
     font-family: Proxima Nova Alt Light;
     src: url(../fonts/Proxima\ Nova\ Alt\ Light.otf);
@@ -20,6 +23,10 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+body{
+    background-color: rgb(31, 31, 31);
 }
 
 .container-full{

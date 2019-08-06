@@ -35,6 +35,7 @@
   align-items: center;
   min-width: 266px;
 }
+
 .iconMainFooter {
   width: 59px;
   height: 59px;
@@ -42,7 +43,7 @@
 }
 
 .main-title-footer {
-  font-family: Poppins;
+  font-family: Proxima Nova;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -60,7 +61,7 @@
 }
 
 .title-footer {
-  font-family: Poppins;
+  font-family: Proxima Nova;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -70,7 +71,7 @@
 }
 
 .subtopics-item-contact {
-  font-family: "Poppins", sans-serif;
+  font-family: Proxima Nova;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -84,8 +85,9 @@
   height: 150px;
   background-color: rgb(49, 49, 49);
 }
+
 .description-item-contact {
-  font-family: "Poppins", sans-serif;
+  font-family: Proxima Nova;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -94,25 +96,14 @@
   color: #ffffff;
 }
 
-.social-networs {
-  margin-top: 15px;
-  display: flex;
-}
-
-.icon-social-footer {
-  width: 25px;
-}
-.icon-social-footer:not(:first-child) {
-  margin-left: 29px;
-}
-
 .content-menu-footer {
   width: 242px;
   display: flex;
   flex-direction: column;
 }
+
 .title-menu-footer {
-  font-family: "Poppins", sans-serif;
+  font-family: Proxima Nova;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -122,16 +113,17 @@
 
   margin-bottom: 25px;
 }
+
 .item-menu-footer {
   text-decoration: none;
   margin-bottom: 20px;
-  font-family: "Poppins", sans-serif;
+  font-family: Proxima Nova;
   font-size: 12px;
   color: #ffffff;
 }
 
 .horario-footer {
-  font-family: "Poppins", sans-serif;
+  font-family: Proxima Nova;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -139,26 +131,30 @@
 
   color: #ffffff;
 }
+
 .container-copyright-footer {
   max-width: 971px;
-  width: 80%;
+  /* width: 80%; */
+
   z-index: 5;
 }
 
-.description-footer {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 18px;
-  text-align: center;
 
-  color: #ffffff;
+.social-networs {
   margin-bottom: 15px;
+  display: flex;
+}
+
+.icon-social-footer {
+  height: 25px;
+}
+
+.icon-social-footer:not(:first-child) {
+  margin-left: 29px;
 }
 
 .name-school-footer {
-  font-family: Poppins;
+  font-family: Proxima Nova;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -169,7 +165,7 @@
 }
 
 .copyright-footer {
-  font-family: Poppins;
+  font-family: Proxima Nova;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -208,6 +204,7 @@
   .icon-social-footer {
     width: 30px;
   }
+
   .icon-social-footer:not(:first-child) {
     margin-left: initial;
   }

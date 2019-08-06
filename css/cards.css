@@ -2,7 +2,8 @@
   width: 100%;
   background: url(../media/images/pencil.jpg) no-repeat bottom;
   background-size: cover;
-  /* background-color: #fff; */
+  background-color: rgb(29, 29, 29);
+  min-height: 100vh;
   display: flex;
   justify-content: space-around;
   padding: 100px 50px 100px 50px;
@@ -14,6 +15,7 @@
   grid-template-rows: repeat(2, 476px);
   grid-row-gap: 100px;
   grid-column-gap: 130px;
+  /* overflow: hidden; */
 }
 
 .cards-about-us {
@@ -22,25 +24,30 @@
   border-radius: 24px;
   z-index: 1;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* overflow: hidden; */
 }
 
 .img-card {
   width: 100%;
   height: 60%;
-  border-radius: 24px 24px 60px 0;
+  border-radius: 24px 24px 20px 0;
 }
+
 .img-card-1 {
   background: url(../media/images/childs.jpg) center no-repeat;
   background-size: cover;
 }
+
 .img-card-2 {
   background: url(../media/images/development.jpg) center no-repeat;
   background-size: cover;
 }
+
 .img-card-3 {
   background: url(../media/images/hands.jpg) center no-repeat;
   background-size: cover;
 }
+
 .img-card-4 {
   background: url(../media/images/teacher.jpg) center no-repeat;
   background-size: cover;
@@ -49,33 +56,40 @@
 .content-card {
   width: 100%;
   height: 20%;
-  background-color: rgb(255, 255, 255);
   padding: 10px 15px 10px 15px;
 }
 
 .title-card {
-  font-family: "Poppins", sans-serif;
+  position: relative;
+  display: inline;
+  font-family: Proxima Nova;
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
-
   color: #171717;
 }
-.line-divide-cards {
-  background-color: rgb(22, 21, 21);
-  width: 85px;
-  height: 1px;
-  margin-bottom: 5px;
+
+.title-card::after {
+  content: '';
+  position: absolute;
+  transform: translateY(200%);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(70, 39, 39);
 }
+
 .description-cards {
-  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+  font-family: Proxima Nova;
   font-style: normal;
-  font-size: 11px;
+  font-size: 14px;
   line-height: 15px;
   text-transform: capitalize;
   max-height: 30px;
 
-  color: #000000;
+  color: #4b4b4b;
 
   overflow: hidden;
 }
@@ -109,47 +123,57 @@
   top: 90px;
   left: -10px;
 }
+
 .shape2 {
   z-index: 50;
   top: 5px;
   right: 50px;
 }
+
 .shape3 {
   z-index: 50;
   top: 60px;
   left: 10px;
 }
+
 .shape4 {
   z-index: 50;
   top: 30px;
   right: -25px;
 }
+
 .shape5 {
   transform: translateY(-50%);
   z-index: -1;
 }
+
 .shape6 {
   transform: translateY(-20%);
   right: 30px;
   z-index: -1;
 }
+
 .shape7 {
   transform: translateY(100%);
   left: -50px;
   z-index: -1;
 }
+
 .shape8 {
   transform: translateY(-30%);
   left: -40px;
 }
+
 .shape9 {
   transform: translateY(-25%);
   left: 25px;
 }
+
 .shape10 {
   transform: translateY(-12%);
   left: 25px;
 }
+
 .shape11 {
   z-index: -1;
   transform: translateY(-15%);
@@ -166,10 +190,10 @@
 }
 
 .title-card-section {
-  font-family: "Poppins", sans-serif;
+  font-family: Proxima Nova;
+  font-size: 60px;
   font-style: normal;
   font-weight: normal;
-  font-size: 45px;
   line-height: 65px;
   display: flex;
   align-items: center;
@@ -180,10 +204,9 @@
 }
 
 .description-card-section {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
+  font-family: Proxima Nova;
   font-weight: 200;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 25px;
   /* or 125% */
   display: flex;
@@ -247,6 +270,7 @@
     grid-column-gap: 80px;
   }
 }
+
 @media (max-width: 760px) {
   .container-grid-cards {
     grid-template-columns: repeat(auto-fit, 320px);
@@ -258,20 +282,22 @@
   .cards-about-us {
     width: 320px;
   }
-}
 
-@media (max-width: 400px) {
   .title-card-section {
     font-size: 40px;
   }
+}
+
+@media (max-width: 400px) {
+
+
   .container-grid-cards {
-    grid-template-columns: repeat(auto-fit, 200px);
+    grid-template-columns: repeat(auto-fit, 250px);
     grid-column-gap: 0px;
   }
 
   .cards-about-us {
-    background-color: rgb(53, 13, 13);
-    width: 200px;
+    width: 250px;
   }
 
   .shape6 {
@@ -281,12 +307,15 @@
   .shape7 {
     left: -25px;
   }
+
   .shape8 {
     left: -25px;
   }
+
   .shape9 {
     left: 5px;
   }
+
   .shape11 {
     right: -10px;
   }
