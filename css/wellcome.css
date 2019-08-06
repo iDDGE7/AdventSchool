@@ -118,27 +118,31 @@
 }
 
 .card1 {
-  background: url(../media/images/bc3.jpg) left no-repeat;
-  background-size: cover;
+  /* background: url(../media/images/bc3.jpg) left no-repeat;
+  background-size: cover; */
   transform: translateX(0%);
+  background-color: rgb(197, 33, 33);
 }
 
 .card2 {
-  background: url(../media/images/bc4.jpg) left no-repeat;
-  background-size: cover;
+  /* background: url(../media/images/bc4.jpg) left no-repeat;
+  background-size: cover; */
   transform: translateX(100%);
+  background-color: rgb(107, 197, 33);
 }
 
 .card3 {
-  background: url(../media/images/footer.jpg) left no-repeat;
-  background-size: cover;
+  /* background: url(../media/images/footer.jpg) left no-repeat;
+  background-size: cover; */
   transform: translateX(200%);
+  background-color: rgb(33, 77, 197);
 }
 
 .card4 {
-  background: url(../media/images/slide3.jpg) left no-repeat;
-  background-size: cover;
+  /* background: url(../media/images/slide3.jpg) left no-repeat;
+  background-size: cover; */
   transform: translateX(300%);
+  background-color: rgb(194, 197, 33);
 }
 
 .logoCards {
