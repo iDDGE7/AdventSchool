@@ -126,4 +126,3 @@ function changeCardAuto() {
         circleAnt = circle1;
     }
 }
-
