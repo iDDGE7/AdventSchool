@@ -6,8 +6,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url(../media/images/footer2.jpg) center no-repeat;
-  background-size: cover;
+  /* background: url(../media/images/footer2.jpg) center no-repeat;
+  background-size: cover; */
+  background-color: rgb(64, 55, 189);
 }
 
 .filter-footer {

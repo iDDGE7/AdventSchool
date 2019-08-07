@@ -1,10 +1,11 @@
 .container-section-wellcome {
   width: 100%;
-  background: linear-gradient(rgba(32, 34, 34, 0.5),
+  /* background: linear-gradient(rgba(32, 34, 34, 0.5),
       rgba(41, 40, 41, 0.5)), url(../media/images/baim-hanif-pYWuOMhtc6k-unsplash.jpg) no-repeat center;
-  background-size: cover;
+  background-size: cover; */
   display: flex;
   justify-content: space-evenly;
+  background-color: rgb(78, 167, 240);
 
   min-height: 100vh;
 }
@@ -35,8 +36,6 @@
   font-size: 15px;
   color: white;
   padding-right: 45px;
-  /* background-color: rgb(77, 24, 24); */
-  
 }
 
 .container-button-contact {
@@ -46,11 +45,10 @@
   /* background-color: rgb(209, 33, 33); */
 }
 
-.button-contact {
+.button-more {
   position: absolute;
   right: 80px;
 
-  text-decoration: none;
   width: 150px;
   height: 45px;
   border-radius: 9px;
@@ -66,6 +64,71 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#popupWellcome {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  width: 80%;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(252, 252, 252);
+  z-index: 50;
+  transition: all 0.5s;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* overflow: hidden; */
+}
+
+.content-popup {
+  display: flex;
+  justify-content: center;
+  font-family: Proxima nova;
+  font-size: 18px;
+  line-height: 3vh;
+  color: rgb(43, 43, 43);
+  width: 50%;
+  height: 80%;
+  padding: 50px;
+
+  overflow: auto;
+}
+
+.img-popup {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background-color: rgb(168, 110, 110);
+  background: url(../media/images/popups/wellcome.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.title-popup {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 5vw;
+  letter-spacing: 0.4em;
+
+  color: rgb(255, 255, 255);
+}
+
+
+.btn-close-popup {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(-100%, 100%);
+  width: 30px;
 }
 
 .container-wellcome-card {
@@ -210,8 +273,10 @@
 
   .container-wellcome-title {
     width: 100%;
+    max-width: initial;
     padding: 150px 10px 150px 10px;
     align-items: center;
+    /* background-color: #fff; */
   }
 
   .title-txt-wellcome {
@@ -236,7 +301,7 @@
     align-items: center;
   }
 
-  .button-contact {
+  .button-more {
     position: initial;
   }
 
@@ -269,7 +334,58 @@
 
 /* tabletas */
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  #popupWellcome {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    width: 80%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(252, 252, 252);
+    z-index: 50;
+    transition: all 0.5s;
+
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .content-popup {
+    padding: 30px;
+    font-size: 2vw;
+    line-height: initial;
+    width: 100%;
+    height: 60%;
+  }
+
+  .img-popup {
+    width: 90%;
+    height: 40%;
+  }
+
+  .title-popup {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 8vw;
+
+    color: rgb(255, 255, 255);
+  }
+
+
+  .btn-close-popup {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-100%, 100%);
+    width: 30px;
+  }
+}
 
 /* Moviles */
 
@@ -306,4 +422,14 @@
     margin-top: 50px;
     font-size: 12px;
   }
+
+  .content-popup {
+    padding: 30px;
+    ;
+    font-size: 3vw;
+    line-height: initial;
+    width: 100%;
+    height: 60%;
+  }
+
 }

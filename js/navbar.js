@@ -72,17 +72,42 @@ function resetColor() {
 }
 
 
-
-
 // movile device button
 var buttonMenu = document.getElementById("menuSection");
 var buttonCloseMenu = document.getElementById("buttonCloseMenu");
 var menuMobile = document.getElementById("menuMobile");
+var itemsMobile = document.getElementsByClassName("item-movil");
+var menuToggle = 0;
+
+window.onresize = function () {
+    var sizeScreen = window.screen.width;
+    if (sizeScreen < 1100) {
+        if (menuToggle == 1) {
+            menuMobile.style.left = '-50%';
+            menuToggle = 0;
+        }
+    }
+}
 
 
 buttonMenu.addEventListener('click', function () {
-    menuMobile.className = "container-menu-mobile-show";
+    if (menuToggle == 0) {
+        menuMobile.style.left = '50%';
+        menuToggle = 1;
+    } else {
+        menuMobile.style.left = '-50%';
+        menuToggle = 0;
+    }
+
 });
+
+
 buttonCloseMenu.addEventListener('click', function () {
-    menuMobile.className = "container-menu-mobile-hidden";
+    if (menuToggle == 0) {
+        menuMobile.style.left = '50%';
+        menuToggle = 1;
+    } else {
+        menuMobile.style.left = '-50%';
+        menuToggle = 0;
+    }
 });

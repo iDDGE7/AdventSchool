@@ -69,7 +69,7 @@ nav {
 
 .link {
   font-family: Proxima Nova;
-  font-weight:  bold;
+  font-weight: bold;
   font-size: 15px;
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -203,16 +203,25 @@ nav {
     display: flex;
     z-index: 150;
     overflow: hidden;
-    height: 100%;
-    background: #282d32;
+    /* height: 100%; */
+    /* background: #282d32; */
     justify-content: center;
     align-items: center;
   }
 
   .container-menu-mobile {
-    width: 0%;
+    transition: all 0.5s;
+    top: 50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+    max-width: 300px;
+    height: 80%;
+    min-height: 600px;
+    /* background-color: #fff; */
   }
 
+
+  /*
   .container-menu-mobile-show {
     width: 100%;
     transition: all 1s;
@@ -221,7 +230,7 @@ nav {
   .container-menu-mobile-hidden {
     width: 0%;
     transition: all 1s;
-  }
+  } */
 
   .btn-close {
     position: absolute;
@@ -230,7 +239,7 @@ nav {
     transform: translate(-50%);
     width: 45px;
     height: 45px;
-    background: #be4e2c;
+    background: #ffffff;
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -244,66 +253,18 @@ nav {
   .container-links-mobile {
     width: 100%;
     height: 100%;
-
     display: grid;
-    grid-template-columns: repeat(2, minmax(165px, 1fr));
+    grid-template-columns: repeat(2, 140px);
     grid-template-rows: repeat(10, auto);
     grid-gap: 5px;
   }
 
   .item-movil {
     border-radius: 5px;
-  }
-
-  .itemM1 {
-    background: url(../media/images/menu-mobile/Home.jpg) fixed no-repeat;
-    background-size: cover;
-
-    grid-row: span 5;
-    grid-column: span 1;
-  }
-
-  .itemM2 {
-    grid-row: span 4;
-    grid-column: span 1;
-    background: url(../media/images/menu-mobile/Calender.JPG) fixed no-repeat;
-    background-size: cover;
-  }
-
-  .itemM3 {
-    grid-row: span 5;
-    grid-column: span 1;
-    background: url(../media/images/menu-mobile/Schoolen.jpg) fixed no-repeat;
-    background-size: cover;
-  }
-
-  .itemM4 {
-    grid-row: span 3;
-    grid-column: span 1;
-    background: url(../media/images/menu-mobile/Vacaturas.jpg) fixed no-repeat;
-    background-size: cover;
-  }
-
-  .itemM5 {
-    grid-row: span 4;
-    grid-column: span 1;
-    background: url(../media/images/menu-mobile/LoginPortal.jpg) fixed no-repeat;
-    background-size: cover;
-  }
-
-  .itemM6 {
-    grid-row: span 3;
-    grid-column: span 1;
-    background: url(../media/images/menu-mobile/Aboutus.jpg) fixed no-repeat;
-    background-size: cover;
-  }
-
-  .item-movil-filter {
-    border-radius: 5px;
-    background-color: rgba(41, 39, 39, 0.5);
+    background-color: rgb(39, 187, 150);
     width: 100%;
     height: 100%;
-    font-family: Open Sans;
+    font-family: Proxima Nova;
     font-style: normal;
     font-weight: 600;
     font-size: 2vh;
@@ -316,6 +277,49 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .itemM1 {
+    /* background: url(../media/images/menu-mobile/Home.jpg) fixed no-repeat;
+    background-size: cover; */
+
+    grid-row: span 5;
+    grid-column: span 1;
+  }
+
+  .itemM2 {
+    grid-row: span 4;
+    grid-column: span 1;
+    /* background: url(../media/images/menu-mobile/Calender.JPG) fixed no-repeat;
+    background-size: cover; */
+  }
+
+  .itemM3 {
+    grid-row: span 5;
+    grid-column: span 1;
+    /* background: url(../media/images/menu-mobile/Schoolen.jpg) fixed no-repeat;
+    background-size: cover; */
+  }
+
+  .itemM4 {
+    grid-row: span 3;
+    grid-column: span 1;
+    /* background: url(../media/images/menu-mobile/Vacaturas.jpg) fixed no-repeat;
+    background-size: cover; */
+  }
+
+  .itemM5 {
+    grid-row: span 4;
+    grid-column: span 1;
+    /* background: url(../media/images/menu-mobile/LoginPortal.jpg) fixed no-repeat;
+    background-size: cover; */
+  }
+
+  .itemM6 {
+    grid-row: span 3;
+    grid-column: span 1;
+    /* background: url(../media/images/menu-mobile/Aboutus.jpg) fixed no-repeat;
+    background-size: cover; */
   }
 
   .iconMenuMobile {
