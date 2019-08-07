@@ -5,9 +5,10 @@
   min-height: 100vh;
 
 
-  background: linear-gradient(#2b2b3aa4, #254558cb),
+  /* background: linear-gradient(#2b2b3aa4, #254558cb),
     url(../media/images/bible.jpg) no-repeat center;
-  background-size: cover;
+  background-size: cover; */
+  background-color: rgb(78, 168, 113);
   display: flex;
   justify-content: space-evenly;
 
