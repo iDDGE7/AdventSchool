@@ -1,8 +1,8 @@
 .container-section-wellcome {
   width: 100%;
-  /* background: linear-gradient(rgba(32, 34, 34, 0.5),
-      rgba(41, 40, 41, 0.5)), url(../media/images/baim-hanif-pYWuOMhtc6k-unsplash.jpg) no-repeat center;
-  background-size: cover; */
+  background: linear-gradient(rgba(32, 34, 34, 0.5),
+      rgba(41, 40, 41, 0.5)), url(../media/images/wellcome.jpg) no-repeat center;
+  background-size: cover;
   display: flex;
   justify-content: space-evenly;
   background-color: rgb(78, 167, 240);

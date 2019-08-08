@@ -27,25 +27,25 @@
 }
 
 #slide1 {
-  background: url(../media/images/slide5.jpg) no-repeat center;
+  background: url(../media/images/slider1/image1.jpg) no-repeat center;
   background-size: cover;
   background-color: rgb(230, 178, 112);
 }
 
 #slide2 {
-  background: url(../media/images/photo1.JPG) no-repeat center;
+  background: url(../media/images/slider1/image2.jpg) no-repeat center;
   background-size: cover;
   background-color: rgb(112, 230, 224);
 }
 
 #slide3 {
-  background: url(../media/images/photo2.JPG) no-repeat center;
+  background: url(../media/images/slider1/image3.JPG) no-repeat center;
   background-size: cover;
   background-color: rgb(112, 230, 171);
 }
 
 #slide4 {
-  background: url(../media/images/slide6.jpg) no-repeat center;
+  background: url(../media/images/slider1/image4.jpg) no-repeat center;
   background-size: cover;
   background-color: rgb(194, 90, 90);
 }
