@@ -1,7 +1,7 @@
 .container-section-cards {
   width: 100%;
-  /* background: url(../media/images/pencil.jpg) no-repeat bottom;
-  background-size: cover; */
+  background: url(../media/images/about\ us.jpg) no-repeat bottom;
+  background-size: cover;
   background-color: rgb(241, 208, 18);
   min-height: 100vh;
   display: flex;
@@ -34,22 +34,22 @@
 }
 
 .img-card-1 {
-  background: url(../media/images/childs.jpg) center no-repeat;
+  background: url(../media/images/cards/activity.JPG) center no-repeat;
   background-size: cover;
 }
 
 .img-card-2 {
-  background: url(../media/images/development.jpg) center no-repeat;
+  background: url(../media/images/cards/Kalender.JPG) center no-repeat;
   background-size: cover;
 }
 
 .img-card-3 {
-  background: url(../media/images/hands.jpg) center no-repeat;
+  background: url(../media/images/cards/Potret.JPG) center no-repeat;
   background-size: cover;
 }
 
 .img-card-4 {
-  background: url(../media/images/teacher.jpg) center no-repeat;
+  background: url(../media/images/cards/activity.JPG) center no-repeat;
   background-size: cover;
 }
 
@@ -198,7 +198,7 @@
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  color: #464646;
+  color: #ffffff;
 
   margin-bottom: 30px;
 }
@@ -213,7 +213,7 @@
   align-items: center;
   text-transform: capitalize;
 
-  color: #000000;
+  color: #ffffff;
 }
 
 @media (max-width: 1400px) {
