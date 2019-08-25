@@ -6,8 +6,10 @@ var link = document.getElementsByClassName("link");
 var logoMain = document.getElementsByClassName('fillMain');
 var boxSearch = document.getElementById("boxSearch");
 var menuButton = document.getElementsByClassName("fill-button-menu");
-
+var backgroundWellcome = document.getElementById("wellcome");
 var stateScroll = 0;
+
+var fillArrow = document.getElementById("fillArrow");
 var i = 0;
 for (i; i < link.length; i++) {
     link[i].addEventListener("mouseover", changeColor);
@@ -16,6 +18,7 @@ for (i; i < link.length; i++) {
 
 
 window.onscroll = function () {
+
     var scrollpos = document.documentElement.scrollTop;
     if (scrollpos > 150) {
         bcHeader.style.transform = "translateY(0%)"
@@ -23,6 +26,8 @@ window.onscroll = function () {
         boxSearch.style.backgroundColor = "rgb(41, 41, 41)";
         boxSearch.style.color = "white";
         boxSearch.className = "placeholder-white";
+        fillArrow.style.fill = "black";
+
         for (var i = 0; i < link.length; i++) {
             link[i].style.color = "#252525";
         }
@@ -33,6 +38,9 @@ window.onscroll = function () {
             menuButton[i].style.fill = "#252525";
         }
         stateScroll = 1;
+
+
+        // fillArrow.className = "arrowWhite";
     }
     else if (stateScroll == 1) {
         bcHeader.style.transform = "translateY(-100%)"
@@ -40,6 +48,8 @@ window.onscroll = function () {
         boxSearch.style.backgroundColor = "white";
         boxSearch.className = "placeholder-dark";
         boxSearch.style.color = "rgb(49, 49, 49)";
+        fillArrow.style.fill = "white";
+
         for (var i = 0; i < link.length; i++) {
             link[i].style.color = "white";
         }
@@ -50,7 +60,15 @@ window.onscroll = function () {
             menuButton[i].style.fill = "white";
         }
         stateScroll = 0;
+
+        // fillArrow.className = "arrowBlack";
     }
+
+    var position = scrollpos * 0.8;
+    backgroundWellcome.style.backgroundPositionY =   position + "px";  
+
+
+
 }
 
 function changeColor() {
@@ -111,3 +129,18 @@ buttonCloseMenu.addEventListener('click', function () {
         menuToggle = 0;
     }
 });
+
+
+var buttonSchool = document.getElementById("buttonSchool");
+var menuOptions = document.getElementById("menu-options");
+var toggleMenu = 0;
+buttonSchool.addEventListener("click", function () {
+    if (toggleMenu == 0) {
+        menuOptions.style.visibility = "visible";
+        toggleMenu = 1;
+    } else {
+        menuOptions.style.visibility = "hidden";
+        toggleMenu = 0;
+    }
+
+})

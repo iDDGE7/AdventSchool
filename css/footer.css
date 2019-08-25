@@ -22,6 +22,7 @@
 }
 
 .container-data-footer {
+  
   width: 90%;
   max-width: 1665px;
   margin-bottom: 80px;
@@ -32,9 +33,18 @@
 }
 
 .content-title-footer {
+  /* background-color: chartreuse; */
   display: flex;
+  flex-direction: column;
   align-items: center;
   min-width: 266px;
+  
+}
+
+.title-footer-content{
+  display: flex;
+  margin-bottom: 50px;
+
 }
 
 .iconMainFooter {
@@ -83,7 +93,7 @@
 
 .google-maps {
   border-radius: 15px;
-  height: 150px;
+  height: 300px;
   background-color: rgb(49, 49, 49);
 }
 

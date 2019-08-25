@@ -15,31 +15,30 @@ var pos = 1;
 var btnLeft = document.getElementById('btn-left-action');
 var btnRight = document.getElementById('btn-right-action');
 
-var interval = setInterval(slideRight, 3000);
+var interval = window.setInterval(slideRight, 5000);
 var timer;
 
 btnLeft.addEventListener('click', function () {
     slideLeft();
-    clearInterval(interval);
-    clearInterval(interval);
-    clearTimeout(timer);
-    timer = setTimeout(timerLeft, 10000);
+    window.clearInterval(interval);
+    window.clearTimeout(timer);
+    // timer = setTimeout(timerLeft, 10000);
 });
 
 btnRight.addEventListener('click', function () {
     slideRight();
-    clearInterval(interval);
-    clearTimeout(timer);
-    timer = setTimeout(timerRight, 10000);
+    window.clearInterval(interval);
+    window.clearTimeout(timer);
+    // timer = setTimeout(timerRight, 10000);
 });
 
-function timerLeft() {
-    interval = setInterval(slideLeft, 3000);
-}
+// function timerLeft() {
+//     interval = setInterval(slideLeft, 5000);
+// }
 
-function timerRight() {
-    interval = setInterval(slideRight, 3000);
-}
+// function timerRight() {
+//     interval = setInterval(slideRight, 5000);
+// }
 
 function slideLeft() {
 

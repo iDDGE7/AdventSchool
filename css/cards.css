@@ -12,7 +12,7 @@
 .container-grid-cards {
   display: grid;
   grid-template-columns: repeat(2, 300px);
-  grid-template-rows: repeat(2, 476px);
+  grid-auto-rows: 476px;
   grid-row-gap: 100px;
   grid-column-gap: 130px;
   /* overflow: hidden; */
@@ -44,7 +44,7 @@
 }
 
 .img-card-3 {
-  background: url(../media/images/cards/Potret.JPG) center no-repeat;
+  background: url(../media/images/cards/Potret.jpeg) center no-repeat;
   background-size: cover;
 }
 

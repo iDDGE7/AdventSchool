@@ -5,11 +5,13 @@
 @import 'mv.css';
 @import 'cards.css';
 @import 'footer.css';
+@import 'video.css';
 
 @font-face {
     font-family: Proxima Nova;
     src: url(../fonts/ProximaNova-Regular.otf);
-  }
+}
+
 @font-face {
     font-family: Proxima Nova Alt Light;
     src: url(../fonts/Proxima\ Nova\ Alt\ Light.otf);
@@ -25,11 +27,12 @@
     user-select: none;
 }
 
-body{
+body {
     background-color: rgb(31, 31, 31);
+    scroll-behavior: smooth;
 }
 
-.container-full{
+.container-full {
     position: absolute;
     top: 100%;
     width: 100%;
