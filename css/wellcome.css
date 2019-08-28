@@ -3,11 +3,13 @@
   background: linear-gradient(rgba(32, 34, 34, 0.5),
       rgba(41, 40, 41, 0.5)), url(../media/images/wellcome.jpg) no-repeat center;
   background-size: cover;
+  background-position-y: 1;
   display: flex;
   justify-content: space-evenly;
   background-color: rgb(78, 167, 240);
 
   min-height: 100vh;
+  
 }
 
 .container-wellcome-title {

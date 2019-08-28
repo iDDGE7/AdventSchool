@@ -26,3 +26,17 @@ closePopupMV.addEventListener('click',function(){
     popupMv.style.visibility = 'hidden';
     popupMv.style.opacity = '0';
 });
+
+var closePopupInf = document.getElementById("closePopupInf");
+var buttonCardHistoria = document.getElementById("buttonCardHistoria");
+var popupsInfoHistoria  = document.getElementById("popupsInfoHistoria");
+
+buttonCardHistoria.addEventListener('click',function(){
+    popupsInfoHistoria.style.visibility = 'visible';
+    popupsInfoHistoria.style.opacity = '1';
+});
+
+closePopupInf.addEventListener('click',function(){
+    popupsInfoHistoria.style.visibility = 'hidden';
+    popupsInfoHistoria.style.opacity = '0';
+});

@@ -8,6 +8,7 @@
   background: linear-gradient(#69696b50, #ebc90a44),
     url(../media/images/mv.jpg) no-repeat center;
   background-size: cover;
+  background-position-y: 1;
   background-color: rgb(78, 168, 113);
   display: flex;
   justify-content: space-evenly;

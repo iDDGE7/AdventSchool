@@ -40,17 +40,26 @@ nav {
 
 .nav-section {
   height: 100%;
-
+  display: flex;
+  align-items: flex-end;
 }
 
 #logoSection {
   padding: 10px;
   /* background-color: rgb(94, 12, 12); */
+
 }
 
 .iconSchool {
-  height: 80%;
+  /* height: 80%; */
   fill: white;
+  margin-right: 10px;
+}
+
+.main-title-nav {
+  color: white;
+  font-family: Proxima Nova;
+  font-size: 20px;
 }
 
 
@@ -134,6 +143,7 @@ nav {
 }
 
 #searchSection {
+  display: none;
   position: relative;
   width: 280px;
   height: 35px;
@@ -371,5 +381,11 @@ nav {
   .iconMenuMobile {
     margin-bottom: 3vh;
     width: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-title-nav {
+    display: none;
   }
 }
